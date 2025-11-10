@@ -5,6 +5,7 @@ contract Kill {
     constructor() payable {}
 
     function killContract() external {
+        // esta funcionalidad sera deprecada
         selfdestruct(payable(msg.sender));
     }
 
